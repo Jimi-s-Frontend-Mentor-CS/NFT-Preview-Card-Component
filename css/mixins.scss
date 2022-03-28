@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+@mixin ff {
+    font-family: 'Outfit', sans-serif;
+}
+
+@mixin fw-300 {
+    font-weight: 300;
+}
+
+@mixin fw-400 {
+    font-weight: 400;
+}
+
+@mixin fw-600 {
+    font-weight: 600;
+}
+
+@mixin fs-body-copy {
+    font-size: 18px;
+}
+
+@mixin active {
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $clrCyan;
+    }
+}

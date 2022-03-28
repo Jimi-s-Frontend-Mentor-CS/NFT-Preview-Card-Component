@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  background: #0d192b;
+}
+
+main {
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  background: #14253d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-inline: 2em;
+  margin-block: 3em;
+  border-radius: 2em;
+  overflow: hidden;
+  padding: 1.5em;
+  max-width: 25em;
+}
+
+main .container .nft-image {
+  width: 100%;
+  position: relative;
+}
+
+main .container .nft-image img {
+  width: inherit;
+  border-radius: 1em;
+}
+
+main .container .nft-image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1em;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-image: url("../img/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+
+main .container .nft-image .overlay:hover, main .container .nft-image .overlay:focus, main .container .nft-image .overlay:active {
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 1;
+}
+
+main .container .description h1 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main .container .description h1:hover, main .container .description h1:focus, main .container .description h1:active {
+  color: #00fff7;
+}
+
+main .container .description p {
+  color: #8bacda;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+main .container .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .price .eth, main .container .price .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5em;
+}
+
+main .container .price .eth span, main .container .price .days span {
+  color: #00fff7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main .container .price .days span {
+  color: #8bacda;
+}
+
+main .container .author {
+  margin-top: 1em;
+  padding-block: 1em;
+  border-top: 1px solid #2f415b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .author img {
+  width: 3em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+main .container .author span {
+  padding-left: 1em;
+  font-size: 18px;
+  font-weight: 300;
+  color: #8bacda;
+}
+
+main .container .author span mark {
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+main .container .author span mark:hover, main .container .author span mark:focus, main .container .author span mark:active {
+  color: #00fff7;
+}
+/*# sourceMappingURL=styles.css.map */
